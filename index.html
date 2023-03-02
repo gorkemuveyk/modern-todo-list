@@ -21,27 +21,22 @@
   <body>
     <div class="container">
       <div class="container-form">
-        <input type="text" id="text-input" placeholder="Enter a task" />
+        <input
+          onkeypress="return searchKeyPress(event);"
+          type="text"
+          id="text-input"
+          placeholder="Enter a task"
+        />
         <button type="submit" id="btn-input" value="Add">Add</button>
       </div>
 
       <div class="container-tasks">
         <ul class="tasks">
           <li class="task-item">
-            <span class="task-time">02.03.2023 - 18:16</span>
-            Görkem
+            <span class="task-time">03.03.2023 - 00:26</span>
+            Created todolist app.
             <span class="icons">
-              <i id="trash" class="fa-solid fa-trash trash"></i>
-              <i id="edit" class="fa-solid fa-pen"></i>
-            </span>
-          </li>
-
-          <li class="task-item">
-            <span class="task-time">02.03.2023 - 18:16</span>
-            Görkem
-            <span class="icons">
-              <i id="trash" class="fa-solid fa-trash trash"></i>
-              <i id="edit" class="fa-solid fa-pen"></i>
+              <i id="trash" class="trash fa-solid fa-trash"></i>
             </span>
           </li>
         </ul>
@@ -49,7 +44,7 @@
 
       <div
         style="display: none"
-        class="alert-message animate__animated animate__bounceInDown"
+        class="alert-message animate__animated animate__bounceInLeft"
       >
         <p>Task Added</p>
       </div>

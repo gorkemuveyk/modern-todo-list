@@ -24,6 +24,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 li {
@@ -31,14 +32,13 @@ li {
 }
 
 .container {
-  height: 60vh;
+  height: 80vh;
 }
 
 /* FORM */
 .container-form {
   padding: 1px;
   position: relative;
-  right: 20px;
   display: flex;
   justify-content: center;
 }
@@ -65,7 +65,7 @@ button {
   width: 50px;
   text-align: center;
   right: 10px;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
