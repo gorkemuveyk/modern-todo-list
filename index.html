@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Modern TodoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-form">
+        <input type="text" id="text-input" placeholder="Enter a task" />
+        <button type="submit" id="btn-input" value="Add">Add</button>
+      </div>
+
+      <div class="container-tasks">
+        <ul class="tasks">
+          <li class="task-item">
+            <span class="task-time">02.03.2023 - 18:16</span>
+            Görkem
+            <span class="icons">
+              <i id="trash" class="fa-solid fa-trash trash"></i>
+              <i id="edit" class="fa-solid fa-pen"></i>
+            </span>
+          </li>
+
+          <li class="task-item">
+            <span class="task-time">02.03.2023 - 18:16</span>
+            Görkem
+            <span class="icons">
+              <i id="trash" class="fa-solid fa-trash trash"></i>
+              <i id="edit" class="fa-solid fa-pen"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        style="display: none"
+        class="alert-message animate__animated animate__bounceInDown"
+      >
+        <p>Task Added</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <a target="_blank" href="https://www.instagram.com/gorkemlideveloper/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a target="_blank" href="https://github.com/gorkemuveyk"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>Developed by <span>Görkem</span></p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+/* VARIABLES */
+:root {
+  --primary-color: #393e46;
+  --secondary-color: #222831;
+  --bg-color: #00adb5;
+  --text-color: #eeeeee;
+}
+
+/* RESET CSS */
+::selection {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  height: 60vh;
+}
+
+/* FORM */
+.container-form {
+  padding: 1px;
+  position: relative;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-form input,
+button {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+}
+
+.container-form #text-input {
+  width: 200px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container-form #btn-input {
+  width: 50px;
+  text-align: center;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 1px solid var(--bg-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+.container-form #btn-input:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+/* TASK */
+.tasks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tasks .task-item {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+  width: 300px;
+  height: 50px;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+.tasks .task-item .task-time {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* TASK ICONS */
+.icons {
+  position: absolute;
+  right: 10px;
+  user-select: none;
+}
+
+.icons i {
+  margin: 0px 3px;
+  cursor: pointer;
+}
+
+/* ALERT MESSAGE */
+.alert-message {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 30px;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  width: 150px;
+  position: absolute;
+  left: calc(50% - 75px);
+  bottom: 15px;
+}
+
+.succes {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: var(--text-color);
+}
+
+.footer span {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+.footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo a {
+  color: var(--text-color);
+  margin: 5px;
+  font-size: 25px;
+  transition: 500ms all;
+}
+
+.footer-logo a:hover {
+  transform: rotate(360deg);
+}
+
+.not-null {
+  border: 1px solid red !important;
+}
